@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.apigethomework.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_firstTaskFragment"
+            app:destination="@id/firstTaskFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_secondTaskFragment"
+            app:destination="@id/secondTaskFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstTaskFragment"
+        android:name="com.example.apigethomework.FirstTask.FirstTaskFragment"
+        android:label="fragment_first_task"
+        tools:layout="@layout/fragment_first_task" />
+    <fragment
+        android:id="@+id/secondTaskFragment"
+        android:name="com.example.apigethomework.SecondTask.SecondTaskFragment"
+        android:label="fragment_second_task"
+        tools:layout="@layout/fragment_second_task" />
+</navigation>

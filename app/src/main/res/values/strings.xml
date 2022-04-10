@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">APIPostHomeWork</string>
+    <string name="title">API retrofit Post home works</string>
+    <string name="second_home_work">Second Task</string>
+    <string name="first_home_work">First Task</string>
+</resources>

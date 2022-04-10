@@ -32,13 +32,9 @@ class SecondTaskFragment : Fragment() {
 
     }
     private fun getMyPost() {
-        val retrofitBulder = Retrofit.Builder()
-            .addConverterFactory(GsonConverterFactory.create())
-            .baseUrl("https://jsonplaceholder.typicode.com/")
-            .build()
-            .create(ApiInterface::class.java)
 
-        val retrofitPost = retrofitBulder.creatPost(Post(6,"new text", "new text"))
+
+        val retrofitPost = ApiInterface.NewService.postInstance.creatPost(Post(6,"new text", "new text"))
         retrofitPost.enqueue(object : Callback<Post?> {
             override fun onResponse(call: Call<Post?>, response: Response<Post?>) {
                 tvCode.text = "response Code -> ${response.code()}"

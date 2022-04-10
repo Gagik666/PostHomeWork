@@ -21,13 +21,17 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val btnFirst = view.findViewById<Button>(R.id.btnFirst)
         val btnSecond = view.findViewById<Button>(R.id.btnSecond)
-
+        val btnThird = view.findViewById<Button>(R.id.btnThird)
             btnFirst.setOnClickListener {
                 findNavController().navigate(R.id.action_mainFragment_to_firstTaskFragment)
             }
 
             btnSecond.setOnClickListener {
                 findNavController().navigate(R.id.action_mainFragment_to_secondTaskFragment)
+            }
+
+            btnThird.setOnClickListener {
+                findNavController().navigate(R.id.action_mainFragment_to_thirdFragment)
             }
     }
 

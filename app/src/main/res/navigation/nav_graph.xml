@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_mainFragment_to_secondTaskFragment"
             app:destination="@id/secondTaskFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
     </fragment>
     <fragment
         android:id="@+id/firstTaskFragment"
@@ -27,4 +30,9 @@
         android:name="com.example.apigethomework.SecondTask.SecondTaskFragment"
         android:label="fragment_second_task"
         tools:layout="@layout/fragment_second_task" />
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.example.apigethomework.ThirdTask.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" />
 </navigation>

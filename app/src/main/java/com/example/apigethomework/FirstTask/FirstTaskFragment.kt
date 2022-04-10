@@ -36,13 +36,9 @@ class FirstTaskFragment : Fragment() {
     }
 
     private fun getMyData() {
-        val retrofitBulder = Retrofit.Builder()
-            .addConverterFactory(GsonConverterFactory.create())
-            .baseUrl("https://www.simplifiedcoding.net/demos/")
-            .build()
-            .create(ApiInterface::class.java)
 
-        val retrofitData = retrofitBulder.getData()
+
+        val retrofitData = ApiInterface.NewService.kinoInstance.getData()
         retrofitData.enqueue(object : Callback<List<UserData>?> {
             override fun onResponse(
                 call: Call<List<UserData>?>,

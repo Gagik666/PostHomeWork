@@ -40,4 +40,14 @@
         app:layout_constraintStart_toStartOf="@+id/btnFirst"
         app:layout_constraintTop_toBottomOf="@+id/btnFirst" />
 
+    <Button
+        android:id="@+id/btnThird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="third task"
+        android:backgroundTint="#85A56A"
+        app:layout_constraintTop_toBottomOf="@id/btnSecond"
+        app:layout_constraintStart_toStartOf="@id/btnSecond"
+        app:layout_constraintEnd_toEndOf="@id/btnSecond"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
